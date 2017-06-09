@@ -1,0 +1,94 @@
+<!-- https://www.upwork.com/cat/mobile-developers/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mobile UI</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+	<link href="./css/app.css" rel="stylesheet">
+	
+	<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+	// SCRIPTS
+	/////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous">
+    </script>
+	<script src="js/app.js"></script>
+
+</head>
+<!-- style="background-color: lightgreen;" -->
+<body ng-app="MyApp" ng-controller="appCtrl" layout="column" layout-align="start center" style="background: #EEFF41">
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+// HEADER
+/////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<md-toolbar ng-show="isOpen" id="id1" class="md-whiteframe-15dp toolbarUp" style="background: {{toolbarsColor}}" layout="row" layout-align="center center" flex="10">
+		<h1 class="btns">NEARAPP</h1>
+	</md-toolbar>
+
+ 
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+// WHITE FRAME
+/////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<main ng-show="isOpen" id="mainPage" layout="column" layout-align="center center" layout-padding flex="80">
+
+		<md-whiteframe class="md-whiteframe-17dp mainFrame" layout="column" 
+						layout-align="space-around center" layout-padding>
+
+		  	<div  id="cardFrame" class="md-whiteframe-15dp midleFrame" layout="column" 
+		  			layout-align="center center" flex="80" md-swipe-left="swipeLeft()" md-swipe-right="swipeRight();" style="background: #F9A825">
+		  		<div layout="row" layout-align="center end" layout-padding style="width: 550px; height: 150px;">
+
+		  			<h1 flex class="nameOfRestaurant">
+  						{{currentRestaurant.name}}
+		  			</h1>
+
+		  		</div>
+
+		  		<div class="central-img" layout-padding layout="column" layout-align="center center">
+		  			<img ng-src="./imgs/{{currentRestaurant.img}}.png">
+		  		</div>
+		  	</div>
+
+		  	<div  flex="10" layout="column" id="restaurantKind" layout-align="center center">
+		  		<div class="restaurantKind" layout="row"  layout-align="center center" layout-padding >
+		  			{{currentRestaurant.type}}
+		  		</div>
+		  	</div>
+
+		</md-whiteframe>
+	</main>
+
+	<div ng-click="turn()" ng-hide="isOpen" id="firstPart"  name="firstPage" layout="column" layout-align="center center" flex style="background: #FF5252; width: 100%;" flex>
+		<p><bold>
+			<h1 class="start md-whiteframe-17dp">WELCOME</h1>
+			<h1 class="start md-whiteframe-17dp">TO</h1>
+			<h1 class="start md-whiteframe-17dp">NEAR APP</h1>
+		</p></bold>
+  	</div>
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+// BOTTOM SHEET
+/////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<md-toolbar id="id2"  ng-show="isOpen" class="toolbarBottom" style="background: {{toolbarsColor}}"  layout="row" layout-align="center center" flex="10">
+		<h1 class="btns">RESTAURANTS</h1>
+	</md-toolbar>
+
+
+	
+
+</body>
+</html>

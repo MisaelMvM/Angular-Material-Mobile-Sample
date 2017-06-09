@@ -1,0 +1,77 @@
+
+.central-img {
+	font-size: 100px;
+	width: 700px;
+	border-image: 2px;
+}
+.mainFrame {
+	width: 800px;
+	height: 1200px;
+	border: 1px solid black;
+	border-radius: 2%;
+	background: #FF5252;
+	overflow: hidden;
+
+}
+.midleFrame {
+	border: 1px solid black;
+	border-radius: 10%;
+	-webkit-animation-duration: 0.6s;
+}
+
+img {
+	width: 500px;
+	height: 500px;
+}
+
+.restaurantKind {
+	font-size: 60px;
+	text-transform: uppercase;
+	border: 2px solid black;
+	background: #bd7605;
+	border-radius: 45%;
+	padding: 40px;
+	-webkit-animation-duration: 0.6s;
+}
+.nameOfRestaurant {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 70px;
+}
+
+
+
+body {
+	font-family: 'Francois One', sans-serif;
+}
+
+.start {
+	font-size: 100px;
+	text-align: center;
+	border: 3px solid black;
+	border-radius: 75%;
+	padding: 80px;
+	background: #EEFF41;
+}
+
+.btns {
+	color: black;
+	text-align: center;
+	font-size: 100px;
+}
+
+#mainPage {
+	-webkit-animation-delay: 0.2s;
+}
+#id2 {
+	-webkit-animation-delay: 0.4s;
+}
+
+.toolbarUp {
+	box-shadow: 0px 10px 120px black;
+	font-family: 'Francois One', sans-serif;
+}
+.toolbarBottom {
+	box-shadow: 0px -10px 120px black;
+	font-family: 'Francois One', sans-serif;
+}
