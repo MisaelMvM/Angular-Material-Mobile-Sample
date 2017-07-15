@@ -3,7 +3,7 @@
 ## Instructions
 
 - Clone this repository to your machine.
-- Inside of your new folder (cd Angular-Material-Sample) run npm install.
+- Inside of your new folder (cd angular_material_mobile_sample) run npm install.
 - Open the index.html file in your browser.
 - Open your browser's developer tools ( Ctrl+Shift+I on Windows/Chrome).
 - Switch to mobile device mode ( Ctrl+Shift+M on Windows ).
